@@ -1,0 +1,142 @@
+/* Background image for the whole page */
+body {
+    background-image: url('/images/Background.jpg'); /* Place your image in src/main/resources/static/images */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    font-family: Arial, sans-serif; /* Sets a global font style */
+	
+}
+.navbar {
+    background-color: #333; /* Navbar background color */
+    overflow: hidden;
+    
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between; /* Space between brand and icons */
+    align-items: center; /* Center vertically */
+    padding: 15px; /* Adjust padding as needed */
+}
+
+.navbar-brand {
+    color: white; /* Brand text color */
+    text-decoration: none;
+    font-size: 20px; /* Brand font size */
+}
+
+.navbar-icons {
+    position: absolute; /* Position the icons absolutely */
+    right: 15px; /* Distance from the right edge */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+}
+
+.icon-link {
+    display: inline-block; /* Ensures the icon is clickable */
+}
+
+.navbar-icon {
+    width: 30px; /* Icon width */
+    height: 30px; /* Icon height */
+    vertical-align: middle; /* Aligns with text if needed */
+}
+
+.navbar-nav {
+    margin-left: auto; /* Pushes the navbar items to the right */
+    font-size: 18px; /* Increases font size for the buttons */
+}
+
+.nav-item a {
+    color: white; /* Sets button text color */
+    padding: 10px 15px; /* Adjusts padding around buttons */
+}
+
+.navbar-brand {
+    font-size: 24px; /* Increases the brand font size */
+	/*background-color: #333;
+}
+
+
+.nav-item {
+    margin-left: 15px; /* Optional: add spacing between navbar items */
+}
+
+
+/* Style for the card components */
+.card {
+    background-color: rgb(255, 255, 255); /* Light background for readability */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px #333; /* Adds a subtle shadow */
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: rgb(0, 128, 255);
+    border-color: #007bff;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+
+
+/* Login page specific styles */
+.login-page .login-navbar {
+    background-color: rgb(177, 218, 184); /* Custom background color for login page navbar */
+    padding: 0.5rem 1rem; /* Reduce padding */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center contents horizontally */
+}
+
+/* Logo style */
+.login-page .login-logo {
+    max-width: 220px; /* Set max width for logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Center the login box and add space from navbar */
+.login-page .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Center vertically */
+}
+
+.login-page .login-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid rgb(0, 128, 0);
+    border-radius: 8px;
+    background-color: rgb(64, 128, 128);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	margin-bottom: 220px; /* Add margin to push the box down */
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center; /* Center align items on mobile */
+        margin: 0; /* Reset margin */
+    }
+    .navbar-nav .nav-item {
+        display: block; /* Stack items vertically */
+    }
+}
+
+/* Hover effects */
+.nav-item a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Add a hover effect */
+}
+
+/* Media query for adjusting navbar on smaller devices */
+@media (max-width: 767px) {
+    .navbar-collapse {
+        background-color: #333; /* Ensure the background color matches */
+    }
+}
